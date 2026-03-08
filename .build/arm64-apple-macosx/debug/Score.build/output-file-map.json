@@ -1,0 +1,138 @@
+{
+  "": {
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/master.swiftdeps"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/FXRate.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/InterestCalculationRule.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Temporal/YearMonth.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Utilities/SimpleProfiler.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/IBANValidator.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/SCORReferenceGenerator.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.dia"
+  }
+}
