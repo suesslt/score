@@ -3,7 +3,7 @@ import SwiftUI
 extension Color {
 
     /// Erstellt eine Color aus einem Hex-String (z.B. "#FF0000" oder "707070").
-    init(hex: String) {
+    public init(hex: String) {
         let cleaned = hex.trimmingCharacters(in: .whitespacesAndNewlines)
             .replacingOccurrences(of: "#", with: "")
 

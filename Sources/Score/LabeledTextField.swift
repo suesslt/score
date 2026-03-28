@@ -8,7 +8,7 @@ import SwiftUI
 /// LabeledTextField("E-Mail", text: $form.mandantEmail, placeholder: "mail@example.com")
 /// LabeledTextField("Telefon", text: $form.mandantTelefon, placeholder: "+41 44 000 00 00", keyboardType: .phonePad)
 /// ```
-struct LabeledTextField: View {
+public struct LabeledTextField: View {
     let label: String
     @Binding var text: String
     var placeholder: String = ""
@@ -18,7 +18,7 @@ struct LabeledTextField: View {
     var autocapitalization: TextInputAutocapitalization = .sentences
     var autocorrection: Bool = true
     
-    var body: some View {
+    public var body: some View {
         LabeledContent(label) {
             TextField(placeholder, text: $text)
                 .multilineTextAlignment(.trailing)
@@ -36,13 +36,13 @@ struct LabeledTextField: View {
 
 extension LabeledTextField {
     /// Erstellt ein LabeledTextField mit lokalisierbarem Label
-    init(_ titleKey: LocalizedStringKey, text: Binding<String>, placeholder: String = "") {
+    public init(_ titleKey: LocalizedStringKey, text: Binding<String>, placeholder: String = "") {
         self.label = "\(titleKey)" // SwiftUI konvertiert automatisch
         self._text = text
         self.placeholder = placeholder
     }
     
-    init(
+    public init(
         _ label: String,
         text: Binding<String>,
         placeholder: String = "",
@@ -61,7 +61,7 @@ extension LabeledTextField {
         self.autocorrection = autocorrection
         self.tintColor = tintColor
     }
-    init(
+    public init(
         _ label: String,
         text: Binding<String>,
         placeholder: String = "",

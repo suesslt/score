@@ -7,7 +7,7 @@ public enum DateFormatters {
     // MARK: - Feste Formate (locale-unabhängig)
 
     /// "yyyy-MM-dd" — ISO-Datum für Dateinamen, APIs, XML
-    static let iso: DateFormatter = {
+    public static let iso: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "yyyy-MM-dd"
         f.locale = Locale(identifier: "en_US_POSIX")
@@ -15,7 +15,7 @@ public enum DateFormatters {
     }()
 
     /// "yyyyMMdd" — Kompakt für Dateinamen, Rechnungsnummern
-    static let isoCompact: DateFormatter = {
+    public static let isoCompact: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "yyyyMMdd"
         f.locale = Locale(identifier: "en_US_POSIX")
@@ -23,7 +23,7 @@ public enum DateFormatters {
     }()
 
     /// "yyyy-MM" — Jahr-Monat für Dateinamen
-    static let isoYearMonth: DateFormatter = {
+    public static let isoYearMonth: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "yyyy-MM"
         f.locale = Locale(identifier: "en_US_POSIX")
@@ -33,7 +33,7 @@ public enum DateFormatters {
     // MARK: - Schweizer Formate (de_CH)
 
     /// "dd.MM.yyyy" — Schweizer Standarddatum
-    static let swissDate: DateFormatter = {
+    public static let swissDate: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "dd.MM.yyyy"
         f.locale = Locale(identifier: "de_CH")
@@ -41,7 +41,7 @@ public enum DateFormatters {
     }()
 
     /// "dd.MM.yyyy HH:mm" — Schweizer Datum mit Uhrzeit
-    static let swissDateTime: DateFormatter = {
+    public static let swissDateTime: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "dd.MM.yyyy HH:mm"
         f.locale = Locale(identifier: "de_CH")
@@ -49,7 +49,7 @@ public enum DateFormatters {
     }()
 
     /// "dd.MM" — Kurzformat (Tag.Monat)
-    static let swissShortDate: DateFormatter = {
+    public static let swissShortDate: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "dd.MM"
         f.locale = Locale(identifier: "de_CH")
@@ -57,7 +57,7 @@ public enum DateFormatters {
     }()
 
     /// "MMMM yyyy" — Monatsname mit Jahr (z.B. "März 2026")
-    static let swissMonthYear: DateFormatter = {
+    public static let swissMonthYear: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "MMMM yyyy"
         f.locale = Locale(identifier: "de_CH")
@@ -65,7 +65,7 @@ public enum DateFormatters {
     }()
 
     /// "MM.yyyy" — Monat.Jahr numerisch
-    static let swissNumericMonthYear: DateFormatter = {
+    public static let swissNumericMonthYear: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "MM.yyyy"
         f.locale = Locale(identifier: "de_CH")
@@ -73,7 +73,7 @@ public enum DateFormatters {
     }()
 
     /// "dd. MMM. yyyy" — Kurzer Monatsname (z.B. "28. Mär. 2026")
-    static let swissDateMedium: DateFormatter = {
+    public static let swissDateMedium: DateFormatter = {
         let f = DateFormatter()
         f.dateFormat = "dd. MMM. yyyy"
         f.locale = Locale(identifier: "de_CH")
