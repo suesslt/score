@@ -40,11 +40,15 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift"
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/DateFormatters.swift"
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift"
         },
         {
           "kind" : "file",
@@ -77,6 +81,14 @@
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift"
         },
         {
           "kind" : "file",
@@ -122,8 +134,9 @@
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o",
+        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o",
+        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o",
@@ -132,6 +145,8 @@
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o",
+        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o",
+        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o",
         "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o",
@@ -207,11 +222,15 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o"
+          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o"
         },
         {
           "kind" : "file",
@@ -244,6 +263,14 @@
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o"
         },
         {
           "kind" : "file",
@@ -283,8 +310,9 @@
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift",
+        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift",
+        "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/DateFormatters.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift",
@@ -293,6 +321,8 @@
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift",
+        "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift",
+        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift",
         "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift",
@@ -693,8 +723,9 @@
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift",
+      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift",
+      "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/DateFormatters.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift",
@@ -703,6 +734,8 @@
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift",
+      "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift",
+      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift",
       "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift",
@@ -1011,11 +1044,15 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift"
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/DateFormatters.swift"
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift"
         },
         {
           "kind" : "file",
@@ -1048,6 +1085,14 @@
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift"
         },
         {
           "kind" : "file",
@@ -1115,6 +1160,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o"
         },
         {
@@ -1147,7 +1196,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o"
         },
         {
           "kind" : "file",

@@ -1,8 +1,9 @@
 /Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift
+/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift
+/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift
-/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/DateFormatters.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift
@@ -11,6 +12,8 @@
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift
+/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift
+/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift
 /Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift
