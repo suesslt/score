@@ -2,7 +2,7 @@ import Foundation
 
 /// Zentral gecachte DateFormatter-Instanzen.
 /// `static let` ist in Swift thread-safe (dispatch_once).
-enum DateFormatters {
+public enum DateFormatters {
 
     // MARK: - Feste Formate (locale-unabhängig)
 
