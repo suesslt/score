@@ -1,6 +1,6 @@
 {
   "": {
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/master.swiftdeps"
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/primary.swiftdeps"
   },
   "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/Binding+Decimal.swift": {
     "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.d",

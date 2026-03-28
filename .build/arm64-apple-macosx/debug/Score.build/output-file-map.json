@@ -1,6 +1,6 @@
 {
   "": {
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/master.swiftdeps"
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/primary.swiftdeps"
   },
   "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift": {
     "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.d",
@@ -29,6 +29,13 @@
     "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting~partial.swiftmodule",
     "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swiftdeps",
     "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.dia"
+  },
+  "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/DateFormatters.swift": {
+    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.d",
+    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o",
+    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.dia"
   },
   "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift": {
     "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.d",

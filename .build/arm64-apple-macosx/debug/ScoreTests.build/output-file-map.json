@@ -1,6 +1,6 @@
 {
   "": {
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/master.swiftdeps"
+    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/primary.swiftdeps"
   },
   "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/CurrencyTests.swift": {
     "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.d",
