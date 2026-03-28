@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import SwiftUI
 
 /// Eine wiederverwendbare SwiftUI-Komponente, die einen `LabeledContent` mit einem rechtsbündigen `TextField` kombiniert.
@@ -17,7 +18,7 @@ public struct LabeledTextField: View {
     var textContentType: UITextContentType? = nil
     var autocapitalization: TextInputAutocapitalization = .sentences
     var autocorrection: Bool = true
-    
+
     public var body: some View {
         LabeledContent(label) {
             TextField(placeholder, text: $text)
@@ -37,11 +38,11 @@ public struct LabeledTextField: View {
 extension LabeledTextField {
     /// Erstellt ein LabeledTextField mit lokalisierbarem Label
     public init(_ titleKey: LocalizedStringKey, text: Binding<String>, placeholder: String = "") {
-        self.label = "\(titleKey)" // SwiftUI konvertiert automatisch
+        self.label = "\(titleKey)"
         self._text = text
         self.placeholder = placeholder
     }
-    
+
     public init(
         _ label: String,
         text: Binding<String>,
@@ -61,6 +62,7 @@ extension LabeledTextField {
         self.autocorrection = autocorrection
         self.tintColor = tintColor
     }
+
     public init(
         _ label: String,
         text: Binding<String>,
@@ -82,7 +84,7 @@ extension LabeledTextField {
             LabeledTextField("Firmenname", text: .constant("Muster AG"))
             LabeledTextField("API-Key", text: .constant(""))
         }
-        
+
         Section("Mit Placeholder & Tint") {
             LabeledTextField(
                 "E-Mail",
@@ -97,7 +99,7 @@ extension LabeledTextField {
                 tintColor: .accentColor
             )
         }
-        
+
         Section("Mit Keyboard-Typ (iOS)") {
             LabeledTextField(
                 "E-Mail",
@@ -125,3 +127,4 @@ extension LabeledTextField {
         }
     }
 }
+#endif
