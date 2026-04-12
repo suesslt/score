@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Score is a shared Swift package providing financial base types, temporal utilities, validation, CSV import/export, and a service middleware pipeline. It is used as a local dependency by sibling projects (Konten, Odyssey, SwissInvoice, Stromabrechnungen, Auftritte, EpocServer).
+Score is a shared Swift package providing financial base types, temporal utilities, validation, CSV import/export, Claude API integration, and a service middleware pipeline. It is used as a local dependency by sibling projects (bookscore, Odyssey, SwissInvoice, Stromabrechnungen, Auftritte, Politik, Propositions, Lektueren).
 
 ## Build & Test Commands
 
@@ -54,14 +54,29 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 | `LoggingMiddleware` | Standard logging implementation. |
 | `ServiceError` | Typed errors: `.notFound`, `.validation`, `.businessRule`, `.persistence`, `.authorization`, `.conflict`, `.calculation`, `.importError`. |
 
+#### Claude API (`Sources/Score/Claude/`)
+
+| Type | Description |
+|------|-------------|
+| `ClaudeAPIClient` | Reusable HTTP client for the Anthropic Messages API. `sendMessage()`, `send()`, `sendAndDecode()`. |
+| `ClaudeRequestConfig` | Configuration: model, maxTokens, systemPrompt, tools, timeout. |
+| `ClaudeMessage` | Conversation message (role + content). Factory methods: `.user()`, `.assistant()`. |
+| `ClaudeTool` | Tool definition for API requests. Factory: `.webSearch(maxUses:)`. |
+| `ClaudeAPIResponse` | Decoded API response with `.textContent` helper to extract all text blocks. |
+| `ClaudeContentBlock` | Individual content block (type + text). |
+| `ClaudeResponseParser` | Static utilities: `extractJSON(from:expectArray:)`, `decode(_:from:expectArray:)`. |
+| `ClaudeAPIError` | Typed errors: `.invalidURL`, `.noAPIKey`, `.networkError`, `.apiError`, `.noContent`, `.jsonParsingFailed`. |
+
 #### CSV (`Sources/Score/CSV/`)
 
 | Type | Description |
 |------|-------------|
 | `CSVExportable` | Protocol — types that export as CSV rows. |
 | `ExportColumn` | Column metadata (title, width hint). |
-| `CSVExporter` | Export utility. |
-| `CSVImporter` | Import utility with encoding detection. |
+| `CSVExporter` | Export utility. `exportCSVString()` for string output, `exportCSV()` for file output with configurable `ExportLocation` (`.temp`, `.documents`, `.custom`). |
+| `CSVImporter` | Import utility. `parse(from: URL)` for files, `parse(from: String)` for strings. RFC 4180 multiline support. |
+| `CSVImporter.parseWithErrors()` | Row-level error tracking: returns `CSVImportResult<T>` with `.valid` and `.errors` arrays. |
+| `CSVImportResult<T>` | Result type with `valid: [T]`, `errors: [CSVImportRowError]`, `totalCount`, `hasErrors`. |
 
 #### Validation (`Sources/Score/Validation/`)
 
@@ -81,7 +96,13 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 
 | Type | Description |
 |------|-------------|
-| `PDFRenderer` | UIKit-based PDF generation from SwiftUI/UIKit views. |
+| `PDFRenderer` | CoreGraphics/CoreText PDF generation base class. Text (left/right-aligned), lines, shapes, images, page breaks. Subclass for domain-specific renderers. |
+| `PDFTableLayout` | Table column definitions (label, x, width, rightAligned). Factory: `.evenColumns()`. |
+| `PDFTableColumn` | Single column definition for table layouts. |
+| `PDFRowStyle` | Row visual styles: `.normal`, `.bold`, `.header`, `.detail`, `.totals(lineStyle:)`. |
+| `PDFLineStyle` | Line styles: `.single`, `.double`, `.dashed`. |
+| `PDFColumnTracker` | Tracks independent y-positions for multi-column layouts (e.g. balance sheet). |
+| `PDFRenderer` extensions | `drawTableHeader()`, `drawTableRow()`, `drawAlternatingRowBackground()`, `drawStyledHRule()`. |
 | `Binding+Decimal` | SwiftUI binding helpers for Decimal input fields. |
 | `ErrorAlertModifier` / `.errorAlert()` | SwiftUI modifier for error presentation via `ErrorHandler`. |
 | `ErrorHandler` | Observable error state management. |
@@ -96,4 +117,4 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 
 ## Test Coverage
 
-8 test suites: MoneyTests, CurrencyTests, PercentTests, FXRateTests, VATCalculationTests, YearMonthTests, IBANValidatorTests, SCORReferenceGeneratorTests.
+10 test suites (90 tests): MoneyTests, CurrencyTests, PercentTests, FXRateTests, VATCalculationTests, YearMonthTests, IBANValidatorTests, SCORReferenceGeneratorTests, ClaudeResponseParserTests, CSVTests.

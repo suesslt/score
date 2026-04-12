@@ -1,26 +1,33 @@
 {
   "": {
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/primary.swiftdeps"
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/primary.swiftdeps"
   },
-  "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/Binding+Decimal.swift": {
-    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.d",
-    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swift.o",
-    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal~partial.swiftmodule",
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swiftdeps",
-    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.dia"
+  "/Users/thomassussli/Developer/score/Sources/ScoreUI/Binding+Decimal.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.dia"
   },
-  "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/ErrorAlertModifier.swift": {
-    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.d",
-    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swift.o",
-    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier~partial.swiftmodule",
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swiftdeps",
-    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.dia"
+  "/Users/thomassussli/Developer/score/Sources/ScoreUI/ErrorAlertModifier.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.dia"
   },
-  "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/PDFRenderer.swift": {
-    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.d",
-    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swift.o",
-    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer~partial.swiftmodule",
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swiftdeps",
-    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.dia"
+  "/Users/thomassussli/Developer/score/Sources/ScoreUI/PDFRenderer.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.dia"
+  },
+  "/Users/thomassussli/Developer/score/Sources/ScoreUI/TableLayout.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/TableLayout.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/TableLayout.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/TableLayout~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/TableLayout.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/TableLayout.dia"
   }
 }

@@ -1,8 +1,8 @@
 {
   "builtTestProducts" : [
     {
-      "binaryPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.xctest/Contents/MacOS/ScorePackageTests",
-      "packagePath" : "/Users/thomassussli/Documents/XCode/score",
+      "binaryPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.xctest/Contents/MacOS/ScorePackageTests",
+      "packagePath" : "/Users/thomassussli/Developer/score",
       "productName" : "ScorePackageTests"
     }
   ],
@@ -23,137 +23,152 @@
   "swiftCommands" : {
     "C.Score-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/sources",
-      "importPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/sources",
+      "importPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExportable.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExporter.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVImporter.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeAPIClient.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeResponseParser.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeTypes.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Color+Hex.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/DateFormatters.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Date+Formatting.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/FXRate.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Decimal+Formatting.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/InterestCalculationRule.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/DayCountRule.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/FXRate.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/InterestCalculationRule.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Money.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Percent.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/VATCalculation.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/LabeledTextField.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Money+BookScore.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Temporal/YearMonth.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Utilities/SimpleProfiler.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Services/ServiceError.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/IBANValidator.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Services/ServicePipeline.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Temporal/YearMonth.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Utilities/SimpleProfiler.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/sources"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/sources"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "Score",
-      "moduleOutputPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule",
+      "moduleOutputPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule",
       "objects" : [
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeAPIClient.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeResponseParser.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeTypes.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -162,7 +177,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-j8",
@@ -170,12 +185,12 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
         "-emit-objc-header",
         "-emit-objc-header-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/include/Score-Swift.h",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/include/Score-Swift.h",
         "-swift-version",
         "6",
         "-enable-upcoming-feature",
@@ -206,161 +221,176 @@
         "-package-name",
         "score"
       ],
-      "outputFileMapPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeAPIClient.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeResponseParser.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeTypes.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/FXRate.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/InterestCalculationRule.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Temporal/YearMonth.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Utilities/SimpleProfiler.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/IBANValidator.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
+        "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExportable.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExporter.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVImporter.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeAPIClient.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeResponseParser.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeTypes.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Color+Hex.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/DateFormatters.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Date+Formatting.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Decimal+Formatting.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Financial/DayCountRule.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Financial/FXRate.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Financial/InterestCalculationRule.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Financial/Money.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Financial/Percent.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Financial/VATCalculation.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/LabeledTextField.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Money+BookScore.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Services/ServiceError.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Services/ServicePipeline.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Temporal/YearMonth.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Utilities/SimpleProfiler.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
       ],
-      "tempsPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build",
+      "tempsPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build",
       "wholeModuleOptimization" : false
     },
     "C.ScorePackageTests-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources",
-      "importPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources",
+      "importPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/ScoreTests.swiftmodule"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/ScoreTests.swiftmodule"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "ScorePackageTests",
-      "moduleOutputPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/ScorePackageTests.swiftmodule",
+      "moduleOutputPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/ScorePackageTests.swiftmodule",
       "objects" : [
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o"
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -369,7 +399,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-Xfrontend",
@@ -379,12 +409,12 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
         "-emit-objc-header",
         "-emit-objc-header-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/include/ScorePackageTests-Swift.h",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/include/ScorePackageTests-Swift.h",
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
@@ -411,86 +441,96 @@
         "-package-name",
         "score"
       ],
-      "outputFileMapPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/ScorePackageTests.swiftmodule"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/ScorePackageTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
       ],
-      "tempsPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build",
+      "tempsPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build",
       "wholeModuleOptimization" : false
     },
     "C.ScoreTests-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources",
-      "importPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources",
+      "importPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/CurrencyTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/CSVTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/FXRateTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/ClaudeResponseParserTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/IBANValidatorTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/CurrencyTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/MoneyTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/FXRateTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/PercentTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/IBANValidatorTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/VATCalculationTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/YearMonthTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/VATCalculationTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/YearMonthTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "ScoreTests",
-      "moduleOutputPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/ScoreTests.swiftmodule",
+      "moduleOutputPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/ScoreTests.swiftmodule",
       "objects" : [
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/FXRateTests.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IBANValidatorTests.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/SCORReferenceGeneratorTests.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/VATCalculationTests.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/YearMonthTests.swift.o"
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CSVTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/ClaudeResponseParserTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/FXRateTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IBANValidatorTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/SCORReferenceGeneratorTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/VATCalculationTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/YearMonthTests.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -499,7 +539,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-Xfrontend",
@@ -509,7 +549,7 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
         "-swift-version",
@@ -540,96 +580,111 @@
         "-package-name",
         "score"
       ],
-      "outputFileMapPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CSVTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/FXRateTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/ClaudeResponseParserTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IBANValidatorTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/FXRateTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IBANValidatorTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/SCORReferenceGeneratorTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/VATCalculationTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/YearMonthTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/SCORReferenceGeneratorTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/ScoreTests.swiftmodule"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/VATCalculationTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/YearMonthTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/ScoreTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/CurrencyTests.swift",
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/FXRateTests.swift",
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/IBANValidatorTests.swift",
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/MoneyTests.swift",
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/PercentTests.swift",
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift",
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/VATCalculationTests.swift",
-        "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/YearMonthTests.swift"
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/CSVTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/ClaudeResponseParserTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/CurrencyTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/FXRateTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/IBANValidatorTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/VATCalculationTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/YearMonthTests.swift"
       ],
-      "tempsPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build",
+      "tempsPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build",
       "wholeModuleOptimization" : false
     },
     "C.ScoreUI-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources",
-      "importPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources",
+      "importPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/Binding+Decimal.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/Binding+Decimal.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/ErrorAlertModifier.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/ErrorAlertModifier.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/PDFRenderer.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/PDFRenderer.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/TableLayout.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/Score.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "ScoreUI",
-      "moduleOutputPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/ScoreUI.swiftmodule",
+      "moduleOutputPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/ScoreUI.swiftmodule",
       "objects" : [
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swift.o",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swift.o"
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/TableLayout.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -638,7 +693,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-j8",
@@ -646,12 +701,12 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
         "-emit-objc-header",
         "-emit-objc-header-path",
-        "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/include/ScoreUI-Swift.h",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/include/ScoreUI-Swift.h",
         "-swift-version",
         "6",
         "-plugin-path",
@@ -680,32 +735,37 @@
         "-package-name",
         "score"
       ],
-      "outputFileMapPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/Binding+Decimal.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/ErrorAlertModifier.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/PDFRenderer.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules/ScoreUI.swiftmodule"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/TableLayout.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules/ScoreUI.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/Binding+Decimal.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/ErrorAlertModifier.swift",
-        "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/PDFRenderer.swift"
+        "/Users/thomassussli/Developer/score/Sources/ScoreUI/Binding+Decimal.swift",
+        "/Users/thomassussli/Developer/score/Sources/ScoreUI/ErrorAlertModifier.swift",
+        "/Users/thomassussli/Developer/score/Sources/ScoreUI/PDFRenderer.swift",
+        "/Users/thomassussli/Developer/score/Sources/ScoreUI/TableLayout.swift"
       ],
-      "tempsPath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build",
+      "tempsPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build",
       "wholeModuleOptimization" : false
     }
   },
@@ -720,38 +780,41 @@
       "-package-name",
       "score",
       "-c",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/FXRate.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/InterestCalculationRule.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Temporal/YearMonth.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Utilities/SimpleProfiler.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/IBANValidator.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/SCORReferenceGenerator.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExportable.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExporter.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVImporter.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeAPIClient.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeResponseParser.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeTypes.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Color+Hex.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/DateFormatters.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Date+Formatting.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Decimal+Formatting.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Financial/DayCountRule.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Financial/FXRate.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Financial/InterestCalculationRule.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Financial/Money.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Financial/Percent.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Financial/VATCalculation.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/LabeledTextField.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Money+BookScore.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Services/ServiceError.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Services/ServicePipeline.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Temporal/YearMonth.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Utilities/SimpleProfiler.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift",
       "-I",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx14.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-j8",
@@ -759,12 +822,12 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
       "-emit-objc-header",
       "-emit-objc-header-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/include/Score-Swift.h",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/include/Score-Swift.h",
       "-swift-version",
       "6",
       "-enable-upcoming-feature",
@@ -804,16 +867,16 @@
       "-package-name",
       "score",
       "-c",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift",
       "-I",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx14.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-Xfrontend",
@@ -823,12 +886,12 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
       "-emit-objc-header",
       "-emit-objc-header-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/include/ScorePackageTests-Swift.h",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/include/ScorePackageTests-Swift.h",
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
@@ -864,23 +927,25 @@
       "-package-name",
       "score",
       "-c",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/CurrencyTests.swift",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/FXRateTests.swift",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/IBANValidatorTests.swift",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/MoneyTests.swift",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/PercentTests.swift",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/VATCalculationTests.swift",
-      "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/YearMonthTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/CSVTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/ClaudeResponseParserTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/CurrencyTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/FXRateTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/IBANValidatorTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/VATCalculationTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/YearMonthTests.swift",
       "-I",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx14.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-Xfrontend",
@@ -890,7 +955,7 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
       "-swift-version",
@@ -930,18 +995,19 @@
       "-package-name",
       "score",
       "-c",
-      "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/Binding+Decimal.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/ErrorAlertModifier.swift",
-      "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/PDFRenderer.swift",
+      "/Users/thomassussli/Developer/score/Sources/ScoreUI/Binding+Decimal.swift",
+      "/Users/thomassussli/Developer/score/Sources/ScoreUI/ErrorAlertModifier.swift",
+      "/Users/thomassussli/Developer/score/Sources/ScoreUI/PDFRenderer.swift",
+      "/Users/thomassussli/Developer/score/Sources/ScoreUI/TableLayout.swift",
       "-I",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx14.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-j8",
@@ -949,12 +1015,12 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
       "-emit-objc-header",
       "-emit-objc-header-path",
-      "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/include/ScoreUI-Swift.h",
+      "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/include/ScoreUI-Swift.h",
       "-swift-version",
       "6",
       "-plugin-path",
@@ -1005,14 +1071,14 @@
 
   },
   "testEntryPointCommands" : {
-    "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift" : {
+    "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift" : {
       "inputs" : [
 
       ],
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
         }
       ]
     }
@@ -1023,7 +1089,7 @@
     }
   },
   "writeCommands" : {
-    "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/sources" : {
+    "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -1032,100 +1098,112 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExportable.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExportable.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVExporter.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVExporter.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/CSV/CSVImporter.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/CSV/CSVImporter.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Color+Hex.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeAPIClient.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/DateFormatters.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeResponseParser.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Date+Formatting.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Claude/ClaudeTypes.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Extensions/Decimal+Formatting.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Color+Hex.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Currency.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/DateFormatters.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/DayCountRule.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Date+Formatting.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/FXRate.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Decimal+Formatting.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/InterestCalculationRule.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Money.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/DayCountRule.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/Percent.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/FXRate.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Financial/VATCalculation.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/InterestCalculationRule.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/LabeledTextField.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Money.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Money+BookScore.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Percent.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/VATCalculation.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServiceError.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/LabeledTextField.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Services/ServicePipeline.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Money+BookScore.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Temporal/YearMonth.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Services/Middleware/LoggingMiddleware.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Utilities/SimpleProfiler.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Services/ServiceError.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/IBANValidator.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Services/ServicePipeline.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Temporal/YearMonth.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Utilities/SimpleProfiler.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
         }
       ],
-      "outputFilePath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/sources"
+      "outputFilePath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/sources"
     },
-    "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources" : {
+    "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -1134,12 +1212,12 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift"
         }
       ],
-      "outputFilePath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources"
+      "outputFilePath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/sources"
     },
-    "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.product/Objects.LinkFileList" : {
+    "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.product/Objects.LinkFileList" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -1148,136 +1226,156 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVExportable.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVExporter.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/CSVImporter.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeAPIClient.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeResponseParser.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ClaudeTypes.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Color+Hex.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/LabeledTextField.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/LoggingMiddleware.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Money+BookScore.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Money.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Percent.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ServiceError.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/ServicePipeline.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/VATCalculation.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/FXRateTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IBANValidatorTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CSVTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/ClaudeResponseParserTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/SCORReferenceGeneratorTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/VATCalculationTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/FXRateTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/YearMonthTests.swift.o"
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IBANValidatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/SCORReferenceGeneratorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/VATCalculationTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/YearMonthTests.swift.o"
         }
       ],
-      "outputFilePath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.product/Objects.LinkFileList"
+      "outputFilePath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.product/Objects.LinkFileList"
     },
-    "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources" : {
+    "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -1286,40 +1384,48 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/CurrencyTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/CSVTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/FXRateTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/ClaudeResponseParserTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/IBANValidatorTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/CurrencyTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/MoneyTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/FXRateTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/PercentTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/IBANValidatorTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/VATCalculationTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Tests/ScoreTests/YearMonthTests.swift"
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/VATCalculationTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/YearMonthTests.swift"
         }
       ],
-      "outputFilePath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources"
+      "outputFilePath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/sources"
     },
-    "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources" : {
+    "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -1328,20 +1434,24 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/Binding+Decimal.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/Binding+Decimal.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/ErrorAlertModifier.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/ErrorAlertModifier.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/thomassussli/Documents/XCode/score/Sources/ScoreUI/PDFRenderer.swift"
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/PDFRenderer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/ScoreUI/TableLayout.swift"
         }
       ],
-      "outputFilePath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources"
+      "outputFilePath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreUI.build/sources"
     },
-    "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+    "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -1353,7 +1463,7 @@
           "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+      "outputFilePath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
     }
   }
 }

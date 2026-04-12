@@ -1,12 +1,12 @@
 {
   "": {
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/primary.swiftdeps"
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/primary.swiftdeps"
   },
-  "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift": {
-    "dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.d",
-    "object": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o",
-    "swiftmodule": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner~partial.swiftmodule",
-    "swift-dependencies": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swiftdeps",
-    "diagnostics": "/Users/thomassussli/Documents/XCode/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.dia"
+  "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.derived/runner.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScorePackageTests.build/runner.dia"
   }
 }
