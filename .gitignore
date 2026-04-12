@@ -1,0 +1,57 @@
+# ----- Xcode -----
+## Build
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+## Indexing & logs
+IndexStores/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Scheme (persönliche Einstellungen, nicht teilen)
+*.xcscheme
+!*.xcscheme/
+
+## xcuserdata (Window-Positionen, Breakpoints etc.)
+xcuserdata/
+
+# ----- Swift Package Manager -----
+.build/
+.swiftpm/
+Package.resolved
+
+# ----- macOS -----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ----- Verschiedenes -----
+*.log
+*.swp
+*~
+\#*\#
+
+# ----- Provisioning Profiles -----
+# Normalerweise nicht ins Repo
+*.mobileprovision
+*.provisionprofile
+
+# ----- Code Signing -----
+*.p12
+*.cer
+*.key
+
+# ----- Environment / Secrets -----
+.env
+.env.*
+Secrets/
