@@ -72,6 +72,13 @@
     "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swiftdeps",
     "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.dia"
   },
+  "/Users/thomassussli/Developer/score/Sources/Score/Extensions/String+XMLEscaping.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping.dia"
+  },
   "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift": {
     "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Currency.d",
     "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o",
@@ -176,6 +183,20 @@
     "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator~partial.swiftmodule",
     "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swiftdeps",
     "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.dia"
+  },
+  "/Users/thomassussli/Developer/score/Sources/Score/Validation/IbanNumber.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber.dia"
+  },
+  "/Users/thomassussli/Developer/score/Sources/Score/Validation/QRRReferenceGenerator.swift": {
+    "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator.d",
+    "object": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator.swift.o",
+    "swiftmodule": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator.swiftdeps",
+    "diagnostics": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator.dia"
   },
   "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift": {
     "dependencies": "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.d",

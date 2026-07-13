@@ -3,8 +3,10 @@
 /Users/thomassussli/Developer/score/Tests/ScoreTests/CurrencyTests.swift
 /Users/thomassussli/Developer/score/Tests/ScoreTests/FXRateTests.swift
 /Users/thomassussli/Developer/score/Tests/ScoreTests/IBANValidatorTests.swift
+/Users/thomassussli/Developer/score/Tests/ScoreTests/IbanNumberTests.swift
 /Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift
 /Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift
+/Users/thomassussli/Developer/score/Tests/ScoreTests/QRRAndXMLTests.swift
 /Users/thomassussli/Developer/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift
 /Users/thomassussli/Developer/score/Tests/ScoreTests/VATCalculationTests.swift
 /Users/thomassussli/Developer/score/Tests/ScoreTests/YearMonthTests.swift

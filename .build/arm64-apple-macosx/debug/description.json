@@ -68,6 +68,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Extensions/String+XMLEscaping.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift"
         },
         {
@@ -128,6 +132,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/IbanNumber.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/QRRReferenceGenerator.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
         },
         {
@@ -153,6 +165,7 @@
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DateFormatters.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Date+Formatting.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Currency.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/DayCountRule.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/FXRate.swift.o",
@@ -168,6 +181,8 @@
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/YearMonth.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IBANValidator.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
       ],
       "otherArguments" : [
@@ -198,7 +213,7 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
@@ -209,7 +224,7 @@
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
@@ -262,6 +277,10 @@
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/Decimal+Formatting.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping.swift.o"
         },
         {
           "kind" : "file",
@@ -325,6 +344,14 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
         },
         {
@@ -344,6 +371,7 @@
         "/Users/thomassussli/Developer/score/Sources/Score/DateFormatters.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Date+Formatting.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Decimal+Formatting.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Extensions/String+XMLEscaping.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Financial/DayCountRule.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Financial/FXRate.swift",
@@ -359,6 +387,8 @@
         "/Users/thomassussli/Developer/score/Sources/Score/Temporal/YearMonth.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Utilities/SimpleProfiler.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Validation/IbanNumber.swift",
+        "/Users/thomassussli/Developer/score/Sources/Score/Validation/QRRReferenceGenerator.swift",
         "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift"
       ],
       "tempsPath" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build",
@@ -418,7 +448,7 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
@@ -429,7 +459,7 @@
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
@@ -486,11 +516,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/IbanNumberTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift"
         },
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/QRRAndXMLTests.swift"
         },
         {
           "kind" : "file",
@@ -526,8 +564,10 @@
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/CurrencyTests.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/FXRateTests.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IBANValidatorTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IbanNumberTests.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o",
+        "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/QRRAndXMLTests.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/SCORReferenceGeneratorTests.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/VATCalculationTests.swift.o",
         "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/YearMonthTests.swift.o"
@@ -557,7 +597,7 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
@@ -568,7 +608,7 @@
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
@@ -604,11 +644,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IbanNumberTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/QRRAndXMLTests.swift.o"
         },
         {
           "kind" : "file",
@@ -634,8 +682,10 @@
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/CurrencyTests.swift",
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/FXRateTests.swift",
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/IBANValidatorTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/IbanNumberTests.swift",
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift",
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift",
+        "/Users/thomassussli/Developer/score/Tests/ScoreTests/QRRAndXMLTests.swift",
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift",
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/VATCalculationTests.swift",
         "/Users/thomassussli/Developer/score/Tests/ScoreTests/YearMonthTests.swift"
@@ -712,7 +762,7 @@
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-F",
         "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
         "-I",
@@ -723,7 +773,7 @@
         "-Xcc",
         "-isysroot",
         "-Xcc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
         "-Xcc",
         "-F",
         "-Xcc",
@@ -790,6 +840,7 @@
       "/Users/thomassussli/Developer/score/Sources/Score/DateFormatters.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Date+Formatting.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Extensions/Decimal+Formatting.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Extensions/String+XMLEscaping.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Financial/DayCountRule.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Financial/FXRate.swift",
@@ -805,6 +856,8 @@
       "/Users/thomassussli/Developer/score/Sources/Score/Temporal/YearMonth.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Utilities/SimpleProfiler.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Validation/IbanNumber.swift",
+      "/Users/thomassussli/Developer/score/Sources/Score/Validation/QRRReferenceGenerator.swift",
       "/Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift",
       "-I",
       "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Modules",
@@ -835,7 +888,7 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
@@ -846,7 +899,7 @@
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
@@ -895,7 +948,7 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
@@ -906,7 +959,7 @@
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
@@ -932,8 +985,10 @@
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/CurrencyTests.swift",
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/FXRateTests.swift",
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/IBANValidatorTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/IbanNumberTests.swift",
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift",
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift",
+      "/Users/thomassussli/Developer/score/Tests/ScoreTests/QRRAndXMLTests.swift",
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/SCORReferenceGeneratorTests.swift",
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/VATCalculationTests.swift",
       "/Users/thomassussli/Developer/score/Tests/ScoreTests/YearMonthTests.swift",
@@ -963,7 +1018,7 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
@@ -974,7 +1029,7 @@
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
@@ -1026,7 +1081,7 @@
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-F",
       "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
       "-I",
@@ -1037,7 +1092,7 @@
       "-Xcc",
       "-isysroot",
       "-Xcc",
-      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
       "-Xcc",
       "-F",
       "-Xcc",
@@ -1138,6 +1193,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Extensions/String+XMLEscaping.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift"
         },
         {
@@ -1195,6 +1254,14 @@
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/IbanNumber.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Sources/Score/Validation/QRRReferenceGenerator.swift"
         },
         {
           "kind" : "file",
@@ -1282,6 +1349,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/IbanNumber.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/InterestCalculationRule.swift.o"
         },
         {
@@ -1306,6 +1377,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/QRRReferenceGenerator.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SCORReferenceGenerator.swift.o"
         },
         {
@@ -1319,6 +1394,10 @@
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/SimpleProfiler.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/Score.build/String+XMLEscaping.swift.o"
         },
         {
           "kind" : "file",
@@ -1354,11 +1433,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/IbanNumberTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/MoneyTests.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/PercentTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/.build/arm64-apple-macosx/debug/ScoreTests.build/QRRAndXMLTests.swift.o"
         },
         {
           "kind" : "file",
@@ -1404,11 +1491,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/IbanNumberTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/MoneyTests.swift"
         },
         {
           "kind" : "file",
           "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/PercentTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/thomassussli/Developer/score/Tests/ScoreTests/QRRAndXMLTests.swift"
         },
         {
           "kind" : "file",

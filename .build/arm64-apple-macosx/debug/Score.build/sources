@@ -8,6 +8,7 @@
 /Users/thomassussli/Developer/score/Sources/Score/DateFormatters.swift
 /Users/thomassussli/Developer/score/Sources/Score/Extensions/Date+Formatting.swift
 /Users/thomassussli/Developer/score/Sources/Score/Extensions/Decimal+Formatting.swift
+/Users/thomassussli/Developer/score/Sources/Score/Extensions/String+XMLEscaping.swift
 /Users/thomassussli/Developer/score/Sources/Score/Financial/Currency.swift
 /Users/thomassussli/Developer/score/Sources/Score/Financial/DayCountRule.swift
 /Users/thomassussli/Developer/score/Sources/Score/Financial/FXRate.swift
@@ -23,4 +24,6 @@
 /Users/thomassussli/Developer/score/Sources/Score/Temporal/YearMonth.swift
 /Users/thomassussli/Developer/score/Sources/Score/Utilities/SimpleProfiler.swift
 /Users/thomassussli/Developer/score/Sources/Score/Validation/IBANValidator.swift
+/Users/thomassussli/Developer/score/Sources/Score/Validation/IbanNumber.swift
+/Users/thomassussli/Developer/score/Sources/Score/Validation/QRRReferenceGenerator.swift
 /Users/thomassussli/Developer/score/Sources/Score/Validation/SCORReferenceGenerator.swift
