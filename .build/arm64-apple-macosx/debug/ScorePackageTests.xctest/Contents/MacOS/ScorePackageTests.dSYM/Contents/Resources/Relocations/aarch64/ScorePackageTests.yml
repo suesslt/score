@@ -174,8 +174,8 @@ relocations:
   - { offset: 0xDC9D4, size: 0x8, addend: 0x0, symName: '_$s5Score17CSVImportRowErrorV5errors0D0_pvg', symObjAddr: 0x5CDC, symBinAddr: 0x9AE8, symSize: 0x28 }
   - { offset: 0xDC9E8, size: 0x8, addend: 0x0, symName: '_$sSo15NSDateFormatterCABycfcTO', symObjAddr: 0x6CF4, symBinAddr: 0xAB00, symSize: 0x18 }
   - { offset: 0xDCB4F, size: 0x8, addend: 0x0, symName: '_$s5Score15ClaudeAPIClientV6apiURL33_4580C79BACAE25612A35881151F46345LL_WZ', symObjAddr: 0x0, symBinAddr: 0xAD5C, symSize: 0x180 }
-  - { offset: 0xDCB73, size: 0x8, addend: 0x0, symName: '_$s5Score15ClaudeAPIClientV6apiURL33_4580C79BACAE25612A35881151F46345LL10Foundation0E0VvpZ', symObjAddr: 0x7550, symBinAddr: 0x81CD0, symSize: 0x0 }
-  - { offset: 0xDCB8D, size: 0x8, addend: 0x0, symName: '_$s5Score15ClaudeAPIClientV16anthropicVersion33_4580C79BACAE25612A35881151F46345LLSSvpZ', symObjAddr: 0x7568, symBinAddr: 0x81CE8, symSize: 0x0 }
+  - { offset: 0xDCB73, size: 0x8, addend: 0x0, symName: '_$s5Score15ClaudeAPIClientV6apiURL33_4580C79BACAE25612A35881151F46345LL10Foundation0E0VvpZ', symObjAddr: 0x7560, symBinAddr: 0x81CD0, symSize: 0x0 }
+  - { offset: 0xDCB8D, size: 0x8, addend: 0x0, symName: '_$s5Score15ClaudeAPIClientV16anthropicVersion33_4580C79BACAE25612A35881151F46345LLSSvpZ', symObjAddr: 0x7578, symBinAddr: 0x81CE8, symSize: 0x0 }
   - { offset: 0xDCB9B, size: 0x8, addend: 0x0, symName: '_$s5Score15ClaudeAPIClientV6apiURL33_4580C79BACAE25612A35881151F46345LL_WZ', symObjAddr: 0x0, symBinAddr: 0xAD5C, symSize: 0x180 }
   - { offset: 0xDCBB5, size: 0x8, addend: 0x0, symName: ___swift_allocate_value_buffer, symObjAddr: 0x200, symBinAddr: 0xAEDC, symSize: 0x68 }
   - { offset: 0xDCBC9, size: 0x8, addend: 0x0, symName: ___swift_project_value_buffer, symObjAddr: 0x268, symBinAddr: 0xAF44, symSize: 0x38 }

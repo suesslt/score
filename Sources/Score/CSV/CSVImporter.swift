@@ -23,12 +23,14 @@ public enum CSVImporter {
     /// Parses a CSV file and returns an array of dictionaries (column name → value).
     /// Header names are lowercased for case-insensitive matching.
     public static func parse(from url: URL) throws -> [[String: String]] {
+        #if canImport(Darwin)
         let accessing = url.startAccessingSecurityScopedResource()
         defer {
             if accessing {
                 url.stopAccessingSecurityScopedResource()
             }
         }
+        #endif
 
         // Read file: UTF-8, then fallback ISO-8859-1
         let rawData = try Data(contentsOf: url)

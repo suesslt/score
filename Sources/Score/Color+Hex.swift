@@ -1,3 +1,4 @@
+#if canImport(SwiftUI)
 import SwiftUI
 
 extension Color {
@@ -17,3 +18,4 @@ extension Color {
         self.init(red: r, green: g, blue: b)
     }
 }
+#endif
