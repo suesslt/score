@@ -176,3 +176,66 @@ final class CSVTests: XCTestCase {
         XCTAssertNil(CSVImporter.parseDecimal(""))
     }
 }
+
+// MARK: - v2.2.0 additions (Data parsing, exact-case headers, parseFlag)
+
+extension CSVTests {
+
+    func testParseFromDataUTF8() throws {
+        let data = Data("name;city\nÜli;Zürich\n".utf8)
+        let rows = try CSVImporter.parse(from: data)
+        XCTAssertEqual(rows, [["name": "Üli", "city": "Zürich"]])
+    }
+
+    func testParseFromDataLatin1Fallback() throws {
+        let data = "name;city\nMüller;Zürich\n".data(using: .isoLatin1)!
+        XCTAssertNil(String(data: data, encoding: .utf8))
+        let rows = try CSVImporter.parse(from: data)
+        XCTAssertEqual(rows, [["name": "Müller", "city": "Zürich"]])
+    }
+
+    func testDecodeInvalidEncodingThrows() {
+        // UTF-16 with BOM decodes neither as UTF-8 nor meaningfully — but isoLatin1
+        // accepts any byte sequence, so decode() can only fail for byte patterns
+        // isoLatin1 rejects; there are none. Verify the fallback path instead.
+        let data = "Grüezi".data(using: .isoLatin1)!
+        XCTAssertEqual(try? CSVImporter.decode(data), "Grüezi")
+    }
+
+    func testParseExactCaseHeaders() throws {
+        let rows = try CSVImporter.parse(from: "eventName,eventDate\nGV,2026-01-01\n",
+                                         lowercasedHeaders: false)
+        XCTAssertEqual(rows, [["eventName": "GV", "eventDate": "2026-01-01"]])
+    }
+
+    func testParseWithErrorsExactCaseHeaders() throws {
+        let result = try CSVImporter.parseWithErrors(
+            from: "keyMessage,subject\nA,B\n,C\n",
+            required: ["keyMessage"],
+            lowercasedHeaders: false
+        ) { row -> String in
+            guard let message = row["keyMessage"], !message.isEmpty else {
+                throw CSVImporter.CSVImportError.emptyFile
+            }
+            return message
+        }
+        XCTAssertEqual(result.valid, ["A"])
+        XCTAssertEqual(result.errors.map(\.lineNumber), [3])
+    }
+
+    func testParseFlag() {
+        XCTAssertTrue(CSVImporter.parseFlag("true"))
+        XCTAssertTrue(CSVImporter.parseFlag("Ja"))
+        XCTAssertTrue(CSVImporter.parseFlag("1"))
+        XCTAssertFalse(CSVImporter.parseFlag("false"))
+        XCTAssertFalse(CSVImporter.parseFlag(""))
+        XCTAssertFalse(CSVImporter.parseFlag(nil))
+    }
+
+    func testParseDecimalStripsApostropheVariants() {
+        XCTAssertEqual(CSVImporter.parseDecimal("1'234.50"), Decimal(string: "1234.50"))
+        XCTAssertEqual(CSVImporter.parseDecimal("1\u{2019}234,50"), Decimal(string: "1234.50"))
+        XCTAssertEqual(CSVImporter.parseDecimal("1\u{2018}234.50"), Decimal(string: "1234.50"))
+        XCTAssertEqual(CSVImporter.parseDecimal("1\u{02BC}234.50"), Decimal(string: "1234.50"))
+    }
+}

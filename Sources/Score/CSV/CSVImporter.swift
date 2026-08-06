@@ -20,6 +20,28 @@ public enum CSVImporter {
         }
     }
 
+    /// Decodes CSV bytes: UTF-8 first, then ISO-8859-1 fallback (legacy exports).
+    public static func decode(_ data: Data) throws -> String {
+        if let utf8 = String(data: data, encoding: .utf8) {
+            return utf8
+        }
+        if let latin1 = String(data: data, encoding: .isoLatin1) {
+            return latin1
+        }
+        throw CSVImportError.invalidEncoding
+    }
+
+    /// Parses CSV bytes (UTF-8 with ISO-8859-1 fallback) and returns an array of
+    /// dictionaries (column name → value). Consumers that keep security-scoped URL
+    /// access in the presentation layer pass bytes instead of a URL.
+    public static func parse(
+        from data: Data,
+        separator: Character? = nil,
+        lowercasedHeaders: Bool = true
+    ) throws -> [[String: String]] {
+        try parse(from: decode(data), separator: separator, lowercasedHeaders: lowercasedHeaders)
+    }
+
     /// Parses a CSV file and returns an array of dictionaries (column name → value).
     /// Header names are lowercased for case-insensitive matching.
     public static func parse(from url: URL) throws -> [[String: String]] {
@@ -47,16 +69,24 @@ public enum CSVImporter {
     }
 
     /// Parses a CSV string and returns an array of dictionaries (column name → value).
-    /// Header names are lowercased for case-insensitive matching.
+    /// Header names are lowercased for case-insensitive matching unless
+    /// `lowercasedHeaders` is `false` (for column contracts with exact-case headers).
     /// Supports RFC 4180 multiline quoted fields.
-    public static func parse(from text: String, separator: Character? = nil) throws -> [[String: String]] {
+    public static func parse(
+        from text: String,
+        separator: Character? = nil,
+        lowercasedHeaders: Bool = true
+    ) throws -> [[String: String]] {
         let records = parseRecords(from: text, separator: separator)
 
         guard records.count >= 2 else {
             throw CSVImportError.emptyFile
         }
 
-        let headers = records[0].map { $0.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() }
+        let headers = records[0].map {
+            let trimmed = $0.trimmingCharacters(in: .whitespacesAndNewlines)
+            return lowercasedHeaders ? trimmed.lowercased() : trimmed
+        }
 
         var results: [[String: String]] = []
         for i in 1..<records.count {
@@ -88,6 +118,7 @@ public enum CSVImporter {
         from text: String,
         separator: Character? = nil,
         required: [String] = [],
+        lowercasedHeaders: Bool = true,
         transform: ([String: String]) throws -> T
     ) throws -> CSVImportResult<T> {
         let records = parseRecords(from: text, separator: separator)
@@ -96,7 +127,10 @@ public enum CSVImporter {
             throw CSVImportError.emptyFile
         }
 
-        let headers = records[0].map { $0.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() }
+        let headers = records[0].map {
+            let trimmed = $0.trimmingCharacters(in: .whitespacesAndNewlines)
+            return lowercasedHeaders ? trimmed.lowercased() : trimmed
+        }
 
         // Validate required columns
         if !required.isEmpty {
@@ -166,10 +200,18 @@ public enum CSVImporter {
         let trimmed = string.trimmingCharacters(in: .whitespaces)
         if trimmed.isEmpty { return nil }
         let cleaned = trimmed
-            .replacingOccurrences(of: "'", with: "")
-            .replacingOccurrences(of: "\u{2019}", with: "")
+            .replacingOccurrences(of: "'", with: "")        // ASCII apostrophe
+            .replacingOccurrences(of: "\u{2019}", with: "") // right single quotation mark
+            .replacingOccurrences(of: "\u{2018}", with: "") // left single quotation mark
+            .replacingOccurrences(of: "\u{02BC}", with: "") // modifier letter apostrophe
         let normalized = cleaned.replacingOccurrences(of: ",", with: ".")
         return Decimal(string: normalized)
+    }
+
+    /// Parses a boolean flag: "true"/"ja"/"1" (case-insensitive) → `true`.
+    public static func parseFlag(_ string: String?) -> Bool {
+        let value = (string ?? "").lowercased()
+        return value == "true" || value == "ja" || value == "1"
     }
 
     // MARK: - Private
