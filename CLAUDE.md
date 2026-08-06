@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Score is a shared Swift package providing financial base types, temporal utilities, validation, CSV import/export, Claude API integration, and a service middleware pipeline. It is used as a local dependency by sibling projects (bookscore, Odyssey, SwissInvoice, Stromabrechnungen, Auftritte, Politik, Propositions, Lektueren).
+Score is a shared Swift package providing framework kernel types, financial base types, temporal utilities, validation, CSV import/export, and a service middleware pipeline. It is used by sibling projects (bookscore, simscore, Aisopos, KWYK, Moneypenny, politscore, Stromabrechnungen, Auftritte, SwissInvoice). LLM clients live in the separate `ScoreAI` package (github.com/suesslt/ScoreAI) since Score v2.0.0.
 
 ## Build & Test Commands
 
@@ -63,19 +63,6 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 | `LoggingMiddleware` | Standard logging implementation. |
 | `ServiceError` | Typed errors: `.notFound`, `.validation`, `.businessRule`, `.persistence`, `.authorization`, `.conflict`, `.calculation`, `.importError`. |
 
-#### Claude API (`Sources/Score/Claude/`)
-
-| Type | Description |
-|------|-------------|
-| `ClaudeAPIClient` | Reusable HTTP client for the Anthropic Messages API. `sendMessage()`, `send()`, `sendAndDecode()`. |
-| `ClaudeRequestConfig` | Configuration: model, maxTokens, systemPrompt, tools, timeout. |
-| `ClaudeMessage` | Conversation message (role + content). Factory methods: `.user()`, `.assistant()`. |
-| `ClaudeTool` | Tool definition for API requests. Factory: `.webSearch(maxUses:)`. |
-| `ClaudeAPIResponse` | Decoded API response with `.textContent` helper to extract all text blocks. |
-| `ClaudeContentBlock` | Individual content block (type + text). |
-| `ClaudeResponseParser` | Static utilities: `extractJSON(from:expectArray:)`, `decode(_:from:expectArray:)`. |
-| `ClaudeAPIError` | Typed errors: `.invalidURL`, `.noAPIKey`, `.networkError`, `.apiError`, `.noContent`, `.jsonParsingFailed`. |
-
 #### CSV (`Sources/Score/CSV/`)
 
 | Type | Description |
@@ -129,4 +116,4 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 
 ## Test Coverage
 
-10 test suites (90 tests): MoneyTests, CurrencyTests, PercentTests, FXRateTests, VATCalculationTests, YearMonthTests, IBANValidatorTests, SCORReferenceGeneratorTests, ClaudeResponseParserTests, CSVTests.
+Test suites (138 tests): MoneyTests, CurrencyTests, PercentTests, FXRateTests, VATCalculationTests, YearMonthTests, IBANValidatorTests, SCORReferenceGeneratorTests, CSVTests, KernelTests.
