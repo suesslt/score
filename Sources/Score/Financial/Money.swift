@@ -18,6 +18,43 @@ public struct Money: Equatable, Hashable, Codable, Sendable, Comparable, Identif
         Money(amount: .zero, currency: currency)
     }
 
+    // MARK: - Factory Methods
+
+    public static func of(_ currency: Currency, _ amount: Decimal) -> Money {
+        Money(amount: amount, currency: currency)
+    }
+
+    public static func of(_ currency: Currency, _ amount: Int) -> Money {
+        Money(amount: Decimal(amount), currency: currency)
+    }
+
+    public static func of(_ currency: Currency, _ amount: Double) -> Money {
+        Money(amount: Decimal(amount), currency: currency)
+    }
+
+    /// Factory with an ISO-4217 code string; `nil` for unknown codes.
+    public static func of(code: String, _ amount: Decimal) -> Money? {
+        Currency(rawValue: code.uppercased()).map { Money(amount: amount, currency: $0) }
+    }
+
+    // MARK: - Parsing
+
+    /// Parses `"CHF 1234.56"` or `"1234.56 CHF"` (code prefix or suffix, `.` decimal separator).
+    public static func parse(_ string: String) -> Money? {
+        let trimmed = string.trimmingCharacters(in: .whitespaces)
+        guard trimmed.count > 3 else { return nil }
+
+        if let currency = Currency(rawValue: String(trimmed.prefix(3)).uppercased()),
+           let amount = Decimal(string: trimmed.dropFirst(3).trimmingCharacters(in: .whitespaces)) {
+            return Money(amount: amount, currency: currency)
+        }
+        if let currency = Currency(rawValue: String(trimmed.suffix(3)).uppercased()),
+           let amount = Decimal(string: trimmed.dropLast(3).trimmingCharacters(in: .whitespaces)) {
+            return Money(amount: amount, currency: currency)
+        }
+        return nil
+    }
+
     // MARK: - Error Handling
 
     public enum MoneyError: Error, LocalizedError, Sendable {
@@ -97,6 +134,11 @@ public struct Money: Equatable, Hashable, Codable, Sendable, Comparable, Identif
 
     // MARK: - Formatting
 
+    /// Betrag mit Währungscode im Schweizer Format (z.B. "1'234.56 CHF").
+    public var formatted: String {
+        formatted(locale: Locale(identifier: "de_CH"))
+    }
+
     /// Formatted amount with currency code (e.g. "1,234.56 CHF").
     public func formatted(locale: Locale = Locale(identifier: "en_US")) -> String {
         "\(formattedAmount(locale: locale)) \(currency.rawValue)"
@@ -138,7 +180,29 @@ public struct Money: Equatable, Hashable, Codable, Sendable, Comparable, Identif
     public var isNegative: Bool { amount < .zero }
     public var absoluteValue: Money { Money(amount: abs(amount), currency: currency) }
 
+    /// Amount rounded (bankers) to the currency's decimal places.
+    public var roundedAmount: Decimal {
+        var value = amount
+        var rounded = Decimal()
+        NSDecimalRound(&rounded, &value, currency.decimalPlaces, .bankers)
+        return rounded
+    }
+
     private func abs(_ value: Decimal) -> Decimal {
         value < 0 ? -value : value
+    }
+}
+
+extension Money: CustomStringConvertible {
+    /// Locale-unabhängige Darstellung "CHF 1234.56" (Code, Punkt-Dezimaltrennung, keine Gruppierung).
+    public var description: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = currency.decimalPlaces
+        formatter.maximumFractionDigits = currency.decimalPlaces
+        formatter.groupingSeparator = ""
+        formatter.decimalSeparator = "."
+        let text = formatter.string(from: roundedAmount as NSDecimalNumber) ?? "\(roundedAmount)"
+        return "\(currency.rawValue) \(text)"
     }
 }

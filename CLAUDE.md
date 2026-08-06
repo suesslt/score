@@ -31,7 +31,7 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 
 | Type | Description |
 |------|-------------|
-| `Money` | Currency-safe monetary amounts with `Decimal` precision. Arithmetic operators (`+`, `-`, `*`, `/`) enforce matching currencies via `precondition`. Supports formatting and Swiss 5-centime rounding. |
+| `Money` | Currency-safe monetary amounts with `Decimal` precision. Arithmetic operators (`+`, `-`, `*`, `/`) enforce matching currencies via `precondition`. Factories `Money.of(...)`, `Money.parse("CHF 100")`, Swiss formatting via `.formatted` ("1'234.56 CHF"), locale-parametrized `formatted(locale:)`, locale-independent `description` ("CHF 1234.56"), Swiss 5-centime rounding. |
 | `Currency` | ISO 4217 enum with 180+ currencies. Provides `decimalPlaces`, `symbol`, localized German `displayName`. |
 | `Percent` | Percentage stored as factor (e.g. `0.10` = 10%). Factory methods: `Percent("10%")`, `Percent(decimal: 0.10)`. |
 | `FXRate` | Bid/ask exchange rates with `mid`, `spread`. Conversion: `convert(_:at:)` with `.mid`/`.bid`/`.ask`. Inverse via `inverse()`. |
@@ -103,6 +103,7 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 | `PDFLineStyle` | Line styles: `.single`, `.double`, `.dashed`. |
 | `PDFColumnTracker` | Tracks independent y-positions for multi-column layouts (e.g. balance sheet). |
 | `PDFRenderer` extensions | `drawTableHeader()`, `drawTableRow()`, `drawAlternatingRowBackground()`, `drawStyledHRule()`. |
+| `LabeledTextField` | `LabeledContent` + right-aligned `TextField` form component (iOS; moved here from `Score`). |
 | `Binding+Decimal` | SwiftUI binding helpers for Decimal input fields. |
 | `ErrorAlertModifier` / `.errorAlert()` | SwiftUI modifier for error presentation via `ErrorHandler`. |
 | `ErrorHandler` | Observable error state management. |

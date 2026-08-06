@@ -108,4 +108,53 @@ final class MoneyTests: XCTestCase {
         let neg = Money(amount: -42, currency: .usd)
         XCTAssertEqual(neg.absoluteValue.amount, 42)
     }
+
+    // MARK: - Factories
+
+    func testOfFactories() {
+        XCTAssertEqual(Money.of(.chf, Decimal(string: "1234.56")!),
+                       Money(amount: Decimal(string: "1234.56")!, currency: .chf))
+        XCTAssertEqual(Money.of(.eur, 100), Money(amount: 100, currency: .eur))
+        XCTAssertEqual(Money.of(.usd, 99.5).amount, Decimal(99.5))
+        XCTAssertEqual(Money.of(code: "chf", 10), Money(amount: 10, currency: .chf))
+        XCTAssertNil(Money.of(code: "XXX_UNKNOWN", 10))
+    }
+
+    // MARK: - Parsing
+
+    func testParsePrefixAndSuffix() {
+        XCTAssertEqual(Money.parse("CHF 1234.56"),
+                       Money(amount: Decimal(string: "1234.56")!, currency: .chf))
+        XCTAssertEqual(Money.parse("1234.56 CHF"),
+                       Money(amount: Decimal(string: "1234.56")!, currency: .chf))
+        XCTAssertEqual(Money.parse("  eur 50 "), Money(amount: 50, currency: .eur))
+        XCTAssertNil(Money.parse("CHF"))
+        XCTAssertNil(Money.parse("1234.56"))
+        XCTAssertNil(Money.parse("ZZZ 100"))
+        XCTAssertNil(Money.parse(""))
+    }
+
+    // MARK: - Formatting
+
+    func testFormattedSwiss() {
+        let m = Money(amount: Decimal(string: "1234.56")!, currency: .chf)
+        // de_CH groups with apostrophe (ICU uses U+2019); normalize for a stable assertion.
+        let normalized = m.formatted.replacingOccurrences(of: "\u{2019}", with: "'")
+        XCTAssertEqual(normalized, "1'234.56 CHF")
+    }
+
+    func testDescriptionIsLocaleIndependent() {
+        XCTAssertEqual(Money(amount: Decimal(string: "1234.5")!, currency: .chf).description,
+                       "CHF 1234.50")
+        XCTAssertEqual(Money(amount: 7, currency: .jpy).description, "JPY 7")
+        XCTAssertEqual(Money(amount: Decimal(string: "-1.25")!, currency: .chf).description,
+                       "CHF -1.25")
+    }
+
+    func testRoundedAmountBankers() {
+        XCTAssertEqual(Money(amount: Decimal(string: "1.005")!, currency: .chf).roundedAmount,
+                       Decimal(string: "1.00")!)
+        XCTAssertEqual(Money(amount: Decimal(string: "1.015")!, currency: .chf).roundedAmount,
+                       Decimal(string: "1.02")!)
+    }
 }
