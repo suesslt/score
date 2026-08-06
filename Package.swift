@@ -11,6 +11,7 @@ let package = Package(
     products: [
         .library(name: "Score", targets: ["Score"]),
         .library(name: "ScoreUI", targets: ["ScoreUI"]),
+        .library(name: "ScoreKeychain", targets: ["ScoreKeychain"]),
     ],
     targets: [
         .target(
@@ -24,6 +25,18 @@ let package = Package(
             name: "ScoreUI",
             dependencies: ["Score"],
             path: "Sources/ScoreUI"
+        ),
+        .target(
+            name: "ScoreKeychain",
+            path: "Sources/ScoreKeychain",
+            swiftSettings: [
+                .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
+            ]
+        ),
+        .testTarget(
+            name: "ScoreKeychainTests",
+            dependencies: ["ScoreKeychain"],
+            path: "Tests/ScoreKeychainTests"
         ),
         .testTarget(
             name: "ScoreTests",
