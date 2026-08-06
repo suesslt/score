@@ -239,3 +239,23 @@ extension CSVTests {
         XCTAssertEqual(CSVImporter.parseDecimal("1\u{02BC}234.50"), Decimal(string: "1234.50"))
     }
 }
+
+// MARK: - v2.2.1 CRLF regression ("\r\n" is ONE Swift Character)
+
+extension CSVTests {
+
+    func testParseCRLFLineEndings() throws {
+        let rows = try CSVImporter.parse(from: "a;b\r\n1;2\r\n3;4\r\n")
+        XCTAssertEqual(rows, [["a": "1", "b": "2"], ["a": "3", "b": "4"]])
+    }
+
+    func testParseBareCRLineEndings() throws {
+        let rows = try CSVImporter.parse(from: "a;b\r1;2\r")
+        XCTAssertEqual(rows, [["a": "1", "b": "2"]])
+    }
+
+    func testParseCRLFWithQuotedMultilineField() throws {
+        let rows = try CSVImporter.parse(from: "a;b\r\n\"x\ny\";2\r\n")
+        XCTAssertEqual(rows, [["a": "x\ny", "b": "2"]])
+    }
+}

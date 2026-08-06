@@ -250,7 +250,7 @@ public enum CSVImporter {
         let cleanText = text.hasPrefix("\u{FEFF}") ? String(text.dropFirst()) : text
 
         // Find first line to detect separator
-        let firstNewline = cleanText.firstIndex(where: { $0 == "\n" || $0 == "\r" })
+        let firstNewline = cleanText.firstIndex(where: { $0 == "\n" || $0 == "\r" || $0 == "\r\n" })
         let firstLine = firstNewline.map { String(cleanText[cleanText.startIndex..<$0]) } ?? cleanText
         let sep = separator ?? detectSeparator(firstLine)
 
@@ -299,7 +299,10 @@ public enum CSVImporter {
                     }
                     fields = []
                     continue
-                } else if char == "\n" {
+                } else if char == "\n" || char == "\r\n" {
+                    // "\r\n" is a SINGLE Swift Character (grapheme cluster) — it never
+                    // matches the "\r"/"\n" comparisons individually. Without this arm
+                    // CRLF files (RFC 4180) collapse into one giant record.
                     fields.append(current)
                     current = ""
                     if !fields.allSatisfy({ $0.isEmpty }) || fields.count > 1 {
