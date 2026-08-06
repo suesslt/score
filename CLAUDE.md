@@ -27,6 +27,15 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 
 ### Module: Score
 
+#### Kernel (`Sources/Score/Kernel/`) — framework contract types (since v1.1.0)
+
+| Type | Description |
+|------|-------------|
+| `DomainError` | The single serializable service error (ARCH §5.2). `notFound(entity:id:String)` with `UUID`/`Int` convenience factories; `businessRule(code:message:)` with code-only factory; `validation`, `conflict`, `unauthorized`, `storage`, `transport`. |
+| `SortDirection`, `Sort`, `Pagination`, `PageLimits`, `Page` | Typed querying & pagination (ARCH §12.1). `Page<Item: Sendable>` is conditionally `Codable`/`Equatable`; `map`, `asyncMap`, `empty(size:)`, `pageCount`. Default page size 20, capped at 100. |
+| `UnitOfWork` / `NoopUnitOfWork` | Transaction boundary protocol (`@escaping @Sendable` closure) + pass-through implementation for Config T. |
+| `Principal` | Resolved caller identity (`userID: UUID`, `roles`, `isAdmin`) — ARCH §13.1. |
+
 #### Financial Types (`Sources/Score/Financial/`)
 
 | Type | Description |
@@ -104,6 +113,8 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with two products:
 | `PDFColumnTracker` | Tracks independent y-positions for multi-column layouts (e.g. balance sheet). |
 | `PDFRenderer` extensions | `drawTableHeader()`, `drawTableRow()`, `drawAlternatingRowBackground()`, `drawStyledHRule()`. |
 | `LabeledTextField` | `LabeledContent` + right-aligned `TextField` form component (iOS; moved here from `Score`). |
+| `LoadState` | `idle/loading/loaded/failed` state for async screens (UI-5), `failed` carries `DomainError`. |
+| `DomainErrorDescribing` | Hook protocol: projects map `DomainError` → localized user text (library ships no display strings). |
 | `Binding+Decimal` | SwiftUI binding helpers for Decimal input fields. |
 | `ErrorAlertModifier` / `.errorAlert()` | SwiftUI modifier for error presentation via `ErrorHandler`. |
 | `ErrorHandler` | Observable error state management. |
