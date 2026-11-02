@@ -43,7 +43,7 @@ SPM package (Swift 6.0, iOS 17+, macOS 14+) with five products:
 
 | Type | Description |
 |------|-------------|
-| `Money` | Currency-safe monetary amounts with `Decimal` precision. Arithmetic operators (`+`, `-`, `*`, `/`) enforce matching currencies via `precondition`. Factories `Money.of(...)`, `Money.parse("CHF 100")`, Swiss formatting via `.formatted` ("1'234.56 CHF"), locale-parametrized `formatted(locale:)`, locale-independent `description` ("CHF 1234.56"), Swiss 5-centime rounding. |
+| `Money` | Currency-safe monetary amounts with `Decimal` precision. Arithmetic operators (`+`, `-`, `*`, `/`) enforce matching currencies via `precondition`. Factories `Money.of(...)`, `Money.parse("CHF 100")`, Swiss formatting via `.formatted` ("1'234.56 CHF"), locale-parametrized `formatted(locale:)`, locale-independent `description` ("CHF 1234.56"), Swiss 5-centime rounding. **Since v3.0.0:** arithmetic stays exact, but `==`/`<`/`Hashable`/`isZero`/`isPositive`/`isNegative` work at the currency's precision (half-up), so non-terminating residues (e.g. `x × 8.1 / 108.1`) never make equal amounts unequal. `rounded(_:)` (default half-up) / `roundedAmount` materialize the rounded value; `vatSplit(ratePercent:inclusive:)` rounds the VAT and keeps `net + vat == gross` exact; `Money.sum(_:currency:)`. |
 | `Currency` | ISO 4217 enum with 180+ currencies. Provides `decimalPlaces`, `symbol`, localized German `displayName`. |
 | `Percent` | Percentage stored as factor (e.g. `0.10` = 10%). Factory methods: `Percent("10%")`, `Percent(decimal: 0.10)`. |
 | `FXRate` | Bid/ask exchange rates with `mid`, `spread`. Conversion: `convert(_:at:)` with `.mid`/`.bid`/`.ask`. Inverse via `inverse()`. |

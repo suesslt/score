@@ -1,12 +1,19 @@
 import Foundation
 
 /// Currency-safe monetary amount with `Decimal` precision.
-/// Arithmetic operators enforce currency matching via precondition.
-public struct Money: Equatable, Hashable, Codable, Sendable, Comparable, Identifiable {
+///
+/// **Semantics (v3):** arithmetic (`+ - * /`) is EXACT, so intermediate results
+/// (quantity × unit price, FX conversion, interest) lose nothing. Equality, ordering,
+/// hashing and the sign predicates work at the currency's precision
+/// (`currency.decimalPlaces`, rounded half-up): `4000.000…0004 CHF == 4000.00 CHF`.
+/// The exact amount stays available via `amount`; `rounded()` materializes the
+/// currency-precision value. Arithmetic operators enforce currency matching via
+/// precondition.
+public struct Money: Hashable, Codable, Sendable, Comparable, Identifiable {
     public let amount: Decimal
     public let currency: Currency
 
-    public var id: String { "\(currency.rawValue)-\(amount)" }
+    public var id: String { "\(currency.rawValue)-\(roundedAmount)" }
 
     public init(amount: Decimal, currency: Currency) {
         self.amount = amount
@@ -166,26 +173,81 @@ public struct Money: Equatable, Hashable, Codable, Sendable, Comparable, Identif
         return Money(amount: result * step, currency: currency)
     }
 
-    // MARK: - Comparable
+    // MARK: - Rounding
+
+    /// Amount rounded to the currency's decimal places (half-up by default —
+    /// commercial rounding as used in Swiss bookkeeping and VAT).
+    public func rounded(_ mode: NSDecimalNumber.RoundingMode = .plain) -> Money {
+        Money(amount: Self.round(amount, scale: currency.decimalPlaces, mode: mode), currency: currency)
+    }
+
+    /// Amount rounded half-up to the currency's decimal places.
+    public var roundedAmount: Decimal {
+        Self.round(amount, scale: currency.decimalPlaces, mode: .plain)
+    }
+
+    static func round(_ value: Decimal, scale: Int, mode: NSDecimalNumber.RoundingMode) -> Decimal {
+        var input = value
+        var result = Decimal()
+        NSDecimalRound(&result, &input, scale, mode)
+        return result
+    }
+
+    // MARK: - VAT
+
+    /// Splits this amount into net and VAT. The VAT is rounded half-up to the
+    /// currency's precision; net/gross are derived so that `net + vat == gross` holds
+    /// EXACTLY (no residue from non-terminating divisions such as `x × 8.1 / 108.1`).
+    /// - Parameters:
+    ///   - ratePercent: VAT rate in percent (e.g. `8.1`).
+    ///   - inclusive: `true` if this amount already contains the VAT (gross),
+    ///     `false` if it is the net amount.
+    public func vatSplit(ratePercent: Decimal, inclusive: Bool) -> VATSplit {
+        guard ratePercent != .zero else {
+            return VATSplit(net: self, vat: .zero(currency), gross: self)
+        }
+        if inclusive {
+            let vat = Money(amount: amount * ratePercent / (100 + ratePercent), currency: currency).rounded()
+            return VATSplit(net: self - vat, vat: vat, gross: self)
+        }
+        let vat = Money(amount: amount * ratePercent / 100, currency: currency).rounded()
+        return VATSplit(net: self, vat: vat, gross: self + vat)
+    }
+
+    /// Result of `Money.vatSplit(ratePercent:inclusive:)`.
+    public struct VATSplit: Hashable, Sendable {
+        public let net: Money
+        public let vat: Money
+        public let gross: Money
+    }
+
+    // MARK: - Equality, Ordering, Hashing (currency precision)
+
+    public static func == (lhs: Money, rhs: Money) -> Bool {
+        lhs.currency == rhs.currency && lhs.roundedAmount == rhs.roundedAmount
+    }
+
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(currency)
+        hasher.combine(roundedAmount)
+    }
 
     public static func < (lhs: Money, rhs: Money) -> Bool {
         precondition(lhs.currency == rhs.currency, "Currencies must match")
-        return lhs.amount < rhs.amount
+        return lhs.roundedAmount < rhs.roundedAmount
     }
 
     // MARK: - Convenience
 
-    public var isZero: Bool { amount == .zero }
-    public var isPositive: Bool { amount > .zero }
-    public var isNegative: Bool { amount < .zero }
+    public var isZero: Bool { roundedAmount == .zero }
+    public var isPositive: Bool { roundedAmount > .zero }
+    public var isNegative: Bool { roundedAmount < .zero }
     public var absoluteValue: Money { Money(amount: abs(amount), currency: currency) }
 
-    /// Amount rounded (bankers) to the currency's decimal places.
-    public var roundedAmount: Decimal {
-        var value = amount
-        var rounded = Decimal()
-        NSDecimalRound(&rounded, &value, currency.decimalPlaces, .bankers)
-        return rounded
+    /// Sum of `values` in `currency` (zero for an empty sequence). Every element must
+    /// be in `currency`.
+    public static func sum<S: Sequence>(_ values: S, currency: Currency) -> Money where S.Element == Money {
+        values.reduce(.zero(currency), +)
     }
 
     private func abs(_ value: Decimal) -> Decimal {

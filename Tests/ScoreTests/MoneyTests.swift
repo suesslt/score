@@ -151,10 +151,68 @@ final class MoneyTests: XCTestCase {
                        "CHF -1.25")
     }
 
-    func testRoundedAmountBankers() {
+    func testRoundedAmountHalfUp() {
         XCTAssertEqual(Money(amount: Decimal(string: "1.005")!, currency: .chf).roundedAmount,
-                       Decimal(string: "1.00")!)
+                       Decimal(string: "1.01")!)
         XCTAssertEqual(Money(amount: Decimal(string: "1.015")!, currency: .chf).roundedAmount,
                        Decimal(string: "1.02")!)
+        XCTAssertEqual(Money(amount: Decimal(string: "-1.005")!, currency: .chf).roundedAmount,
+                       Decimal(string: "-1.01")!)
+        XCTAssertEqual(Money(amount: Decimal(string: "1.005")!, currency: .chf).rounded(.bankers).amount,
+                       Decimal(string: "1.00")!)
+        XCTAssertEqual(Money(amount: Decimal(string: "12.5")!, currency: .jpy).roundedAmount, 13)
+    }
+
+    /// Regression (bookscore): 4000 CHF incl. 8.1 % VAT split into net + vat summed to
+    /// 4000.0000000000000000000000000000004449, so a 4000.00 payment counted as partial.
+    func testEqualityAtCurrencyPrecision() {
+        let raw = Decimal(4000) * Decimal(string: "8.1")! / Decimal(string: "108.1")!
+        let gross = Money(amount: (Decimal(4000) - raw) + raw, currency: .chf)
+        XCTAssertNotEqual(gross.amount, 4000)
+        XCTAssertEqual(gross, Money.of(.chf, 4000))
+        XCTAssertTrue(Money.of(.chf, 4000) >= gross)
+        XCTAssertFalse(Money.of(.chf, 4000) < gross)
+        XCTAssertEqual(Set([gross, Money.of(.chf, 4000)]).count, 1)
+        XCTAssertNotEqual(Money.of(.chf, 4000), Money.of(.eur, 4000))
+        XCTAssertNotEqual(Money(amount: Decimal(string: "0.01")!, currency: .chf), .zero(.chf))
+        XCTAssertTrue(Money(amount: Decimal(string: "0.004")!, currency: .chf).isZero)
+        XCTAssertFalse(Money(amount: Decimal(string: "0.004")!, currency: .chf).isPositive)
+    }
+
+    func testArithmeticStaysExact() {
+        let third = Money.of(.chf, 1) / 3
+        XCTAssertEqual((third * 3).amount, Decimal(string: "0.99999999999999999999999999999999999999")!)
+        XCTAssertEqual(third * 3, Money.of(.chf, 1))
+        XCTAssertEqual(third.rounded().amount, Decimal(string: "0.33")!)
+    }
+
+    func testVATSplitInclusiveIsExact() {
+        let split = Money.of(.chf, 4000).vatSplit(ratePercent: Decimal(string: "8.1")!, inclusive: true)
+        XCTAssertEqual(split.vat.amount, Decimal(string: "299.72")!)
+        XCTAssertEqual(split.net.amount, Decimal(string: "3700.28")!)
+        XCTAssertEqual((split.net + split.vat).amount, 4000)
+        XCTAssertEqual(split.gross.amount, 4000)
+    }
+
+    func testVATSplitExclusive() {
+        let split = Money.of(.chf, 4000).vatSplit(ratePercent: Decimal(string: "8.1")!, inclusive: false)
+        XCTAssertEqual(split.net.amount, 4000)
+        XCTAssertEqual(split.vat.amount, 324)
+        XCTAssertEqual(split.gross.amount, 4324)
+        let odd = Money(amount: Decimal(string: "33.33")!, currency: .chf)
+            .vatSplit(ratePercent: Decimal(string: "2.6")!, inclusive: false)
+        XCTAssertEqual(odd.vat.amount, Decimal(string: "0.87")!)   // 0.86658 → 0.87
+        XCTAssertEqual(odd.gross.amount, Decimal(string: "34.20")!)
+    }
+
+    func testVATSplitZeroRate() {
+        let split = Money.of(.chf, 100).vatSplit(ratePercent: 0, inclusive: true)
+        XCTAssertEqual(split.net, Money.of(.chf, 100))
+        XCTAssertTrue(split.vat.isZero)
+    }
+
+    func testSum() {
+        XCTAssertEqual(Money.sum([Money.of(.chf, 1), Money.of(.chf, 2)], currency: .chf), Money.of(.chf, 3))
+        XCTAssertEqual(Money.sum([], currency: .eur), .zero(.eur))
     }
 }
